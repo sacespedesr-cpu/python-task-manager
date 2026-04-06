@@ -37,3 +37,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+def get_next_id(tasks):
+    task_id = get_next_id(tasks)
+    if not tasks:
+        return 1
+    return max(task["id"] for task in tasks) + 1
+    def complete_task(tasks):
+    try:
+        task_id = int(input("ID de la tarea a completar: "))
+    except ValueError:
+        print("Entrada inválida.")
+        return
+
